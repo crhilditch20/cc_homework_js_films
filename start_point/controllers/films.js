@@ -32,10 +32,10 @@ filmRouter.put('/api/films/:id', function(req, res){
   res.json({data: films});
 });
 
-// //Delete
-// filmRouter.delete('/api/films/:id', function(req, res){
-//   films.splice(req.params.id, 1);
-//   res.json({data: films});
-// });
+//Delete
+filmRouter.delete('/api/films/:id', function(req, res){
+  films.splice(req.params.id, 1);
+  res.json({data: films});
+});
 
 module.exports = filmRouter;
