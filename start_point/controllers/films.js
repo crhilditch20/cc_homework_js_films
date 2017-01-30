@@ -12,10 +12,10 @@ filmRouter.get('/api/films', function(req, res){
   res.json(films);
 });
 
-// //Show
-// filmRouter.get('/api/films/:id', function(req, res){
-//   res.json({data: films[req.params.id]}); 
-// });
+//Show
+filmRouter.get('/api/films/:id', function(req, res){
+  res.json({data: films[req.params.id]}); 
+});
 
 // //Create
 // filmRouter.post('/api/films', function(req, res){
